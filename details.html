@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/cleanCSS.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/head-foot.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <title>详情页</title>
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="./layer/layer.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/details.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <div class="container">
+            <!-- logo -->
+            <div id="logo">
+                <a href="./index.html" class="iconfont icon-yijia">
+                    <h1>一加商城</h1>
+                </a>
+            </div>
+            <!-- 头部导航栏 -->
+            <nav id="head_nav">
+                <ul id="nav_info">
+                    <li><a href="#">OnePlus 6T</a></li>
+                    <li id="store"><a href="./index.html">商城 <i class="iconfont icon-sanjiaoxing"></i></a></li>
+                    <li><a href="#">品牌</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">论坛</a></li>
+                </ul>
+            </nav>
+            <!-- 头部右侧登录搜索 -->
+            <div id="mine">
+                <ul id="mine_ul">
+                    <li id="mine_icon"><a href="#"><img src="./images/mine.jpg" alt=""></a></li>
+                    <li id="store_icon"><a href="#"><i class="iconfont icon-shangcheng"></i></a></li>
+                    <li id="searchShow"><a href="#"><i class="iconfont icon-fangdajing"></i></a></li>
+                    <!-- 隐藏的购物车 -->
+                    <div id="shopCar">
+                        <div id="goodslist">
+<<<<<<< HEAD
+  
+=======
+                            <p id="goods-null">您的购物车里没有商品！</p>
+>>>>>>> lemon
+                        </div>
+                        <div id="shopCar-tips">
+                            <a href="shopCar.html">
+                                <span id="goshop">去购物</span>
+                            </a>
+                        </div>
+                        <div id="sum-text"></div>
+                    </div>
+                    <span id="carNum"></span>
+                    <!-- 登录注册 -->
+                    <div id="mineBox">
+                        <a href="#">订单</a>
+                        <a href="#">账户</a>
+                        <a href="#">推荐有礼</a>
+                        <a href="./login.html" id="load">登录</a>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- 搜索框 -->
+            <div id="searchBox">
+                <label for="search">
+                    <i class="iconfont icon-fangdajing"></i>
+                    <input type="search" name="search" id="search" placeholder="搜索商品名称">
+                    <button id="search-close" class="iconfont icon-guanbi"></button>
+                </label>
+                <ul class="search-list">
+                    <li><a href="#">一加银耳2T</a></li>
+                    <li><a href="#">一加手机6T 3D钢化玻璃保护膜（黑色）</a></li>
+                    <li><a href="#">一加手机6T 芳纶纤维全包保护壳</a></li>
+                    <li><a href="#">OnePlus 6T 硅胶保护壳（红色）</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 商城快捷分类 -->
+        <div id="store_type">
+            <div id="phone_icons">
+                <a href="#">
+                    <i class="iconfont icon-shouji1"></i>
+                    手机
+                </a>
+                <a href="#">
+                    <i class="iconfont icon-erji"></i>
+                    耳机
+                </a>
+                <a href="#">
+                    <i class="iconfont icon-shoujike"></i>
+                    壳/膜
+                </a>
+                <a href="#">
+                    <i class="iconfont icon-jubutianchongwuduandian-"></i>
+                    充电器
+                </a>
+                <a href="#">
+                    <i class="iconfont icon-gangtiexia-"></i>
+                    智能
+                </a>
+                <a href="#">
+                    <i class="iconfont icon-xinxinicon"></i>
+                    加油
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 详情内容 -->
+    <main id="main" class="cleanfix">
+        <div class="container">
+            <!-- 左侧图片 -->
+            <div id="phone-pic">
+                <img src=" " alt="" id="phonepic">
+            </div>
+
+            <!-- 右侧价格 -->
+            <div id="phone-data">
+                <h2>OnePlus 6T 简约套装 8GB+128GB</h2>
+                <span class="line"></span>
+                <div id="phone-style">
+                    <div class="style-box">
+                        <h3>OnePlus 6T</h3>
+                        <p>2个版本</p>
+                        <i>墨岩黑 8GB+128GB</i>
+                        <img src="./images/type1.png" alt="">
+                    </div>
+                    <div class="style-box">
+                        <h3>OnePlus 6T</h3>
+                        <p>2个版本</p>
+                        <i>墨岩黑 8GB+128GB</i>
+                        <img src="./images/type1.png" alt="">
+                    </div>
+                </div>
+                <div id="phone-price">￥3,248.00</div>
+                <button id="joinCar">加入购物车</button>
+                <span class="number">库存：有货</span>
+                <div class="phone-tips">
+                    <i class="tips-title">售后政策</i>
+                    7 天无理由退换 | 15 天退货保障 | 30 天换货保障
+                </div>
+                <div class="phone-tips">
+                    <i class="tips-title">物流信息</i>
+                    全场满99元包邮，当天18点前支付24小时内发货
+                </div>
+                <div class="phone-tips">
+                    <i class="tips-title">支付方式</i>
+                    <div class="phone-icons">
+                        <i class="iconfont icon-umidd17"></i>支付宝
+                        <i class="iconfont icon-weixin"></i>微信支付
+                        <i class="iconfont icon-yinlianqia"></i>银联支付
+                        <i class="iconfont icon-xinyongqia"></i>信用卡
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 图文介绍 -->
+    <section id="text">
+        <ul id="text-title" class="container">
+            <li>详情</li>
+            <li>评价</li>
+        </ul>
+        <span class="hr"></span>
+        <div id="text-1">
+            <p class="text-one">低调内敛的墨岩黑，光彩照人的亮瓷黑</p>
+            <p class="text-two">骁龙 845 旗舰处理器，8GB LPDDR4X 大内存，128GB UFS2.1 大闪存，团战开黑高帧率，游戏玩家必备。</p>
+        </div>
+        <div id="text-2">
+            <img src="./images/text-1.jpg" alt="">
+        </div>
+        <div id="text-3">
+            <img src="./images/text-2.jpg" alt="">
+            <div id="text-3-text">
+                <h2>芳纶纤维</h2>
+                <p>军用、航天级的芳纶纤维材料，能为你的 OnePlus 6T 提供耐磨、安全的保护。五重切割，刚柔并济。完好保留几何美感的编织纹理，更带来舒适的类肤质感。</p>
+            </div>
+        </div>
+        <div id="text-4">
+            <div id="text-4-text">
+                <h2>3D 弧边设计，全方位保护屏幕。</h2>
+                <p>3D 弧边，手感顺滑舒适。CNC 精雕，开孔位置精准对位。紧贴屏幕，与机身融为一体。</p>
+            </div>
+            <img src="./images/text-3.jpg" alt="">
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="container">
+            <div id="footer_top" class="cleanfix">
+                <div id="footer_left">
+                    <ul class="footer_ul">
+                        <li>一加产品</li>
+                        <li> <a href="#">OnePlus 6T</a></li>
+                        <li> <a href="#">OnePlus 6</a></li>
+                        <li> <a href="#">OnePlus 5T</a></li>
+                        <li><a href="#">OnePlus 5</a></li>
+                    </ul>
+                    <ul class="footer_ul">
+                        <li>热门活动</li>
+                        <li> <a href="#">推荐有礼</a></li>
+                        <li> <a href="#">以旧换新</a></li>
+                        <li> <a href="#">Shot on OnePlus</a></li>
+                    </ul>
+                    <ul class="footer_ul">
+                        <li>关于一加</li>
+                        <li> <a href="#">了解一加</a></li>
+                        <li> <a href="#">加入一加</a></li>
+                        <li> <a href="#">H2OS</a></li>
+                        <li> <a href="#">云服务</a></li>
+                        <li> <a href="#">预置应用公示</a></li>
+                    </ul>
+                    <ul class="footer_ul">
+                        <li>服务支持</li>
+                        <li> <a href="#">购买帮助</a></li>
+                        <li> <a href="#">用户手册</a></li>
+                        <li> <a href="#">寄修服务</a></li>
+                        <li> <a href="#">服务中心</a></li>
+                        <li> <a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div id="footer_right">
+                    <h3>400-888-111</h3>
+                    <span id="online">在线客服</span>
+                    <p>周一至周日 9:00 - 22:00</p>
+                    <p class="footer_icon"><i class="iconfont icon-weixin"></i><i class="iconfont icon-weibo"></i></p>
+                </div>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <!-- 底部版权 -->
+            <div class="container">
+                <div id="china">
+                    <a href="#" class="china">中国( 简体中文/CNY )</a>
+                    <ul>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">竞赛规则</a></li>
+                        <li><a href="#">知识产权政策</a></li>
+                        <li><a href="#">安全问题反馈</a></li>
+                        <li><a href="#">站点地图</a></li>
+                    </ul>
+                </div>
+                <div id="copyright">
+                    <p>© 2013-2019 OnePlus. All Rights Reserved.</p>
+                    <p>粤ICP备13080605号-4 | 备案主体编号: 44201910955995</p>
+                    <p>粤公网安备 44030402001407号粤公网安备 44030402001407号</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

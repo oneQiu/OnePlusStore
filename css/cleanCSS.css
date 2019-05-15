@@ -1,0 +1,74 @@
+/* css reset */
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+
+}
+
+body,
+html {
+    height: 100%;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+input,button{
+    outline: none;
+}
+ul li {
+    list-style: none;
+}
+
+
+.clenfix {
+    /* 解决低版本IE高度塌陷问题 */
+    *zoom: 1;
+}
+
+.cleanfix::after {
+    /* 由浮动引起的高度塌陷解决 */
+    content: " ";
+    display: block;
+    height: 0; 
+    overflow: hidden;
+    clear: both;
+}

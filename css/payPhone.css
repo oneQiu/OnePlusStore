@@ -1,0 +1,325 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 订单信息 */
+#main {
+    background-color: #efefef;
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+
+#order {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 500px;
+    background: #fff;
+}
+
+#order>h2 {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 0 40px;
+    font-size: 20px;
+    height: 70px;
+    line-height: 70px;
+}
+
+/* 地址填写 */
+#address {
+    padding: 30px 50px 0 70px;
+    margin-bottom: 10px;
+}
+
+#address>h3 {
+    padding: 0 15px 35px;
+    font-size: 16px;
+    color: rgb(130, 130, 130);
+}
+
+#address form {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#address .address-input {
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    width: 50%;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#address .address-input .red-star {
+    color: #eb0028;
+}
+
+.address-input .add-inp {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #101920;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    margin-top: 5px;
+}
+
+#address .site {
+    width: 100%;
+}
+
+#address .normal-add {
+    padding-left: 18px;
+    font-size: 16px;
+    color: rgb(130, 130, 130);
+    margin-bottom: 20px;
+}
+
+#normal-add {
+    transform: scale(1.5, 1.5);
+    margin-right: 15px;
+}
+
+#clear-add {
+    display: block;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    width: 45%;
+    background: #eb0028;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    margin-right: 12px;
+    margin-bottom: 20px;
+}
+
+/* 配送方式 */
+.express {
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: rgb(130, 130, 130);
+}
+
+.express-title {
+    padding-top: 20px;
+}
+
+.express-content {
+    color: #000;
+    padding-top: 10px;
+}
+
+.express-text {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+/* 订单内的商品清单 */
+#list {
+    box-sizing: border-box;
+    padding-top: 30px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 500px;
+    background: #fff;
+}
+
+#list>h2 {
+    font-size: 16px;
+    color: #000;
+    opacity: .6;
+    margin: 0 50px 0 70px;
+}
+
+#list>h2>a {
+    float: right;
+    font-size: 14px;
+    color: #09c;
+}
+
+#list>h2>a:hover {
+    text-decoration: underline;
+}
+
+#pay-list {
+    border-bottom: 1px solid #dfdfdf;
+    margin: 0 50px 0 70px;
+    padding: 20px 0;
+}
+
+.invoice {
+    margin: 0 50px 0 70px;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.invoice .change {
+    float: right;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.invoice .change a {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #09c;
+    font-weight: bold;
+}
+
+.coupon {
+    background: #f9f9f9;
+    padding: 0 50px 0 70px;
+}
+
+.coupon>P {
+    height: 60px;
+    font-size: 16px;
+    color: #000;
+    line-height: 60px;
+}
+
+.coupon>P>span {
+    float: right;
+}
+
+/* 总价以及产品 */
+.pay-goods {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.pay-goods>img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.pay-text {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.pay-head {
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 15px;
+}
+
+.small-price {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+    margin-top: 5px;
+}
+
+.pay-name {
+    width: 50%;
+    height: 48px;
+    font-size: 16px;
+    color: #101920;
+}
+
+.pay-price {
+    text-align: center;
+    width: 10%;
+}
+
+.pay-num {
+    flex: 1;
+    text-align: right;
+}
+
+.pay-money {
+    flex: 1;
+    text-align: right;
+}
+
+.pay-content {
+    padding-top: 20px;
+}
+
+.pay-content li {
+    margin-top: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: rgb(130, 130, 130);
+}
+
+.pay-content li:first-of-type {
+    list-style: none;
+    color: black;
+}
+
+#last-price {
+    display: flex;
+    padding: 20px 50px 37px 70px;
+}
+
+.last-left,
+.last-right {
+    width: 50%;
+}
+
+.last-right p {
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.last-right .float-right {
+    float: right;
+    font-weight: normal;
+    color: rgb(130, 130, 130);
+}
+
+.last-right .line {
+    display: block;
+    margin-top: 10px;
+    height: 1px;
+    background: #dfdfdf;
+}
+
+#confirm-form {
+    cursor: pointer;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    border: none;
+    background: #eb0028;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.last-right #need-pay {
+    margin: 20px 0;
+    height: 48px;
+    line-height: 65px;
+}
+
+.last-right #need-pay>span {
+    line-height: 48px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+}

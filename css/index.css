@@ -1,0 +1,248 @@
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+
+
+/* 轮播图 */
+#banner {
+    position: relative;
+    margin: 0 auto;
+    width: 1900px;
+    height: 480px;
+}
+
+#imgs li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#imgs li {
+    margin: 0 auto;
+    width: 1900px;
+    display: block;
+    height: 480px;
+    background: url(../images/banner1.jpg)no-repeat center;
+    position: absolute;
+    z-index: 6;
+}
+
+#imgs li:nth-of-type(2) {
+    background: url(../images/banner2.jpg)no-repeat center;
+    z-index: 5;
+}
+
+#imgs li:nth-of-type(3) {
+    background: url(../images/banner3.jpg)no-repeat center;
+    z-index: 4;
+}
+
+/* 左右按钮 */
+#btns {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner_left,
+#banner_right {
+    position: absolute;
+    z-index: 8;
+    top: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 84.7%, .2);
+    border: none;
+    cursor: pointer;
+}
+
+#banner_left {
+    left: 0;
+}
+
+#banner_right {
+    right: 0;
+}
+
+#banner_numbers {
+    position: absolute;
+    top: 450px;
+    z-index: 8;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#banner_numbers li {
+    float: left;
+    margin: 0 10px;
+}
+
+#banner_numbers li span {
+    display: block;
+    background-color: hsla(0, 0%, 97.6%, .3);
+    width: 40px;
+    height: 2px;
+    margin: 5px 0;
+}
+
+#banner_numbers li .spanBackground {
+    background-color: white;
+}
+
+/* 产品区 */
+#product .product_head {
+    z-index: 6;
+    background: #fff;
+    padding-top: 10px;
+    height: 50px;
+    position: relative;
+}
+
+#product .drop_down {
+    float: right;
+}
+
+#product h3 {
+    width: 180px;
+    height: 24px;
+    padding: 8px 56px 8px 16px;
+    color: #999;
+    cursor: pointer;
+}
+
+#product .container {
+    position: relative;
+}
+
+/* 产品选择 */
+#product_select {
+    z-index: 9;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 240px;
+    height: 160px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#product_select span {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+#product_info {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #dfdfdf;
+    margin: 0 auto;
+    border-left: 1px solid #dfdfdf;
+    background-color: #f9f9f9;
+    max-width: 1900px;
+}
+
+#product_info .list_card {
+    width: 20%;
+    position: relative;
+    box-sizing: border-box;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    transition: background .3s;
+}
+
+#product_info .list_card:hover {
+    background: white;
+}
+
+.list_card img {
+    width: 100%;
+}
+
+.list_card .discount {
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    height: 20px;
+    width: 34px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    background: red;
+}
+
+.list_card .phone_name {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+
+.list_card .phone_price {
+    margin: 10px 0 30px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* 底部图标标签 */
+#title i {
+    display: block;
+    font-size: 50px;
+    color: #7db93f;
+    margin: 48px 0 5px;
+}
+
+#title {
+    text-align: center;
+    height: 170px;
+    font-size: 16px;
+    color: black;
+}
+
+#title span {
+    margin: 0 90px;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+}
+
+/* 加载更多 */
+#product-add{
+    padding: 30px;
+    height: 50px;
+    background: #f9f9f9;
+}
+
+#more {
+    position: relative;
+    margin:  0 auto;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 48px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: #fff;
+    display: block;
+    height: 50px;
+    width: 20%;
+    transition: all .3s;
+}
+#more:hover{
+    background-color:black;
+    color: white;
+}
