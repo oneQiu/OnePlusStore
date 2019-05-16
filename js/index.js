@@ -131,7 +131,7 @@ function noGoods() {
             </div>
             <div id="sum-text"></div>`;
     $("#shopCar").html(str);
-    $("#carNum").css('display','none');
+    $("#carNum").css('display', 'none');
 }
 
 function setShopCar() {
@@ -158,9 +158,9 @@ function setShopCar() {
     var strText = ` <p id="sumPrice">总价<i class="bigNum">${strType(sumPrice)}</i></p>
                     <p>支持免邮</p>
                     <a href="./shopCar.html" class="payPhone">去购物车</a>
-                    <a href="./shopCar.html" class="payPhone">去付款</a>
+                    <a href="./payPhone.html" class="payPhone">去付款</a>
                    `
-    $("#carNum").css("display",'block').html(sumNum);
+    $("#carNum").css("display", 'block').html(sumNum);
     $("#goodslist").html(str);
     $("#sum-text").html(strText);
     $("#shopCar-tips").remove();
@@ -169,6 +169,21 @@ function setShopCar() {
 
 
 $(function () {
+    var _user = localStorage.getItem('user');
+    if(_user)
+    if (!_user || _user.length > 0) {
+        $("#load").html('退出 ' + _user);
+        $("#load").click(function (e) {
+            localStorage.setItem('user', '');
+            layer.msg('退出成功！',{
+                icon:6,
+                time:2000
+            })
+            e = e || window.event;
+            e.preventDefault();
+            location.reload();
+        })
+    } 
     mouseHide("#store_icon", "#shopCar", 60);
     mouseHide("#mine_icon", "#mineBox", 60);
     mouseHide("#store", "#store_type", 120);

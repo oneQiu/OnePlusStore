@@ -1,0 +1,181 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#main {
+    background: #f3f3f3;
+    overflow: hidden;
+}
+
+/* 控制台左侧 */
+#content {
+    margin-top: 40px;
+    max-width: 1200px;
+    min-width: 300px;
+}
+
+#control {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+    float: left;
+    width: 320px;
+    margin-bottom: 80px;
+    font-size: 16px;
+}
+
+#mine-pic {
+    background: #f9f9f9;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+#mine-pic img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#con-list {
+    background: #fff;
+}
+
+#con-list>ul {
+    border-top: 1px solid #dfdfdf;
+}
+
+#con-list .select {
+    height: 50px;
+    padding: 0 30px;
+    cursor: pointer;
+    line-height: 50px;
+    transition: background 0.3s;
+}
+
+#con-list .select:hover {
+    background: #ededed;
+}
+
+#con-list .list-head {
+    padding: 15px 30px 5px;
+    font-size: 12px;
+    color: rgb(130, 130, 130);
+    cursor: initial;
+}
+
+/* 控制台右侧内容 */
+#control-content {
+    width: 860px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+
+#con-name {
+    font-size: 16px;
+    padding: 20px 30px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#con-text {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+    background-color: #fff;
+}
+
+#text-head {
+    padding: 13px 30px;
+    color: #666666;
+    font-size: 12px;
+    border-bottom: 1px solid #dfdfdf;
+}
+#con-text .money{
+    font-size: 12px;
+    color: rgb(130, 130, 130);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.money > span{
+    display: block;
+    line-height: 20px;
+    height: 20px;
+    margin-right: 20px;
+
+}
+#text-list{
+    display: none;
+    margin: 0 30px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.money > span:last-of-type{
+    flex: 1;
+    text-align: right;
+}
+#con-text .rank{
+    font-size: 14px;
+    color: black;
+}
+
+/* 总价以及产品 */
+.pay-goods {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.pay-goods>img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.pay-text {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.pay-head {
+    display: flex;
+}
+
+.small-price {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+    margin-top: 5px;
+}
+
+.pay-name {
+    width: 50%;
+    height: 24px;
+    font-size: 14px;
+    color: #101920;
+}
+
+.pay-price {
+    text-align: center;
+    width: 10%;
+}
+
+.pay-num {
+    flex: 1;
+    text-align: right;
+}
+
+.pay-money {
+    flex: 1;
+    text-align: right;
+}
+
+.pay-content {
+    padding-top: 20px;
+}
+
+.pay-content li {
+    margin-top: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: rgb(130, 130, 130);
+}

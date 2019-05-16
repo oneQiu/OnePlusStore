@@ -108,7 +108,8 @@ $(function () {
                                 time: 2000,
                                 icon: 6
                             }, function () {
-                                location.href = './login.html';
+                                localStorage.setItem('user',name);
+                                location.href = './mine.html';
                             });
                         } else {
                             layer.msg('密码错误，登录失败。', {

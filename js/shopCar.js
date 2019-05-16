@@ -120,5 +120,6 @@ function getLocal() {
     $("#item").html(str);
 }
 $(function () {
+    
     new Car().getCar().length > 0 ? getLocal() : noCar();
 })

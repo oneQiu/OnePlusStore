@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./css/cleanCSS.css">
     <link rel="stylesheet" href="./css/iconfont.css">
     <link rel="stylesheet" href="./css/head-foot.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/mine.css">
     <title>我</title>
     <script src="./js/jquery-3.4.0.min.js"></script>
     <script src="./layer/layer.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/mine.js"></script>
 </head>
 
 <body>
@@ -56,7 +57,7 @@
                     <span id="carNum"></span>
                     <!-- 登录注册 -->
                     <div id="mineBox">
-                        <a href="#">订单</a>
+                        <a href="./mine.html">订单</a>
                         <a href="#">账户</a>
                         <a href="#">推荐有礼</a>
                         <a href="./login.html" id="load">登录</a>
@@ -109,8 +110,54 @@
             </div>
         </div>
     </header>
+    <!-- 内容 -->
+    <main id="main" class="cleanfix">
+        <div id="content" class="container">
+            <section id="control">
+                <div id="mine-pic">
+                    <img src="./images/mine.jpg" alt=""><span></span> 
+                </div>
+                <div id="con-list">
+                    <ul class="list-zero select">订单</ul>
+                    <ul class="list-one">
+                        <li class="list-head">我的资产</li>
+                        <li class="select">我的卷</li>
+                        <li class="select">邀请码</li>
+                        <li class="select">奖品</li>
+                        <li class="select">推荐返利</li>
+                    </ul>
+                    <ul class="list-two">
+                        <li class="list-head">一加账户管理</li>
+                        <li class="select">个人信息</li>
+                        <li class="select">收货地址</li>
+                        <li class="select">产品认证</li>
+                    </ul>
+                    <ul class="list-three">
+                        <li class="list-head">售后服务</li>
+                        <li class="select">一加加多保</li>
+                        <li class="select">售后单</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="control-content">
+                <div id="con-name">我的订单</div>
+                <div id="con-text">
+                    <div id="text-head"> 订单号: <i class="rank form-no">  </i></div>
+                    <div id="text-content">
+                        <ul id="text-list">
 
-
+                        </ul>
+                        <div class="money">
+                            <span>商品总金额: <i class="rank id-pay"></i> </span>
+                            <span>优惠金额:<i class="rank">￥ 0</i> </span>
+                            <span>运费: <i class="rank">￥ 0.00</i></span>
+                            <span>订单金额:<i class="rank id-pay" ></i> </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <!-- 底部 -->
     <footer id="footer">
         <div class="container">
